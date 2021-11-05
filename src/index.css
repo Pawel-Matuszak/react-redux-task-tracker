@@ -35,6 +35,7 @@ h1{
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  font-size: 20px;
 }
 
 .btn{
@@ -62,11 +63,12 @@ h1{
 .task{
   display: inline-block;
   width: 100%;
-  background: rgba(105, 228, 197, 0.8);
+  background: rgba(105, 228, 197, 0.75);
   padding: 1rem;
   margin: .5rem auto;
   user-select: none;
   position: relative;
+  border-radius: 4px;
 }
 
 .task p{
