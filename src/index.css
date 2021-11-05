@@ -1,13 +1,136 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: #141414;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+  font-weight: 100;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.App{
+  margin: 5rem auto;
+  width: 80vw;
+  max-width: 1000px;
+  min-height: 600px;
+  border: 3px solid;
+  border-image: linear-gradient(
+    to bottom, 
+    rgb(105, 228, 197), 
+    rgb(113, 175, 211)
+  )1;
+}
+
+.Header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn{
+  outline: none;
+  background: #69e4c5;
+  color: rgb(41, 41, 41);
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.taskDiv{
+  margin: 0 auto;
+  max-width: 500px;
+  width: 50vw;
+}
+
+.task{
+  display: inline-block;
+  width: 100%;
+  background: rgba(105, 228, 197, 0.8);
+  padding: 1rem;
+  margin: .5rem auto;
+  user-select: none;
+  position: relative;
+}
+
+.task p{
+  margin: .2rem 0;
+}
+
+.task h3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reminder::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: rgb(214, 16, 66);
+}
+
+.addTaskForm{
+  max-width: 300px;
+  margin: 25px auto;
+}
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+
+}
+
+.form-control:last-of-type{
+  flex-direction: row;
+}
+
+.addTaskForm input{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 1rem;
+  margin: 5px;
+  color: #fff;
+  background: rgb(65, 64, 64);
+}
+
+.addTaskForm button{
+  display: block;
+  margin: auto;
+  outline: none;
+  background: #69e4c5;
+  color: rgb(41, 41, 41);
+  border: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.addTaskForm button:hover{
+  cursor: pointer;
 }
